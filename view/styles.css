@@ -1,0 +1,42 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+html, head, body, canvas, #main{
+    margin:0;
+    padding: 0;
+    border:0;
+}
+#main{
+  height: 100%;
+  width: 100%;
+}
+canvas {
+  background-color: grey;
+}
+.videoCell{
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  background-color: black;
+}
+.videoCell:nth-child(1){
+    top: 0;
+    left: 0;
+}
+.videoCell:nth-child(2){
+    top: 0;
+    left: 50%;
+}
+.videoCell:nth-child(3){
+    top: 50%;
+    left: 0;
+}
+.videoCell:nth-child(4){
+    top: 50%;
+    left: 50%;
+}
+.topLeftNumber {
+    color:white;
+    position: relative;
+    float:right;
+}

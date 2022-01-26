@@ -1,0 +1,43 @@
+{
+  "name": "videowall",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "MVIP Videowall",
+  "main": "main.js",
+  "scripts": {
+    "debug": "electron .",
+    "postinstall": "install-app-deps",
+    "start": "npm install && electron ./app",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "clean": "rm app -rf && rm dist -rf"
+  },
+  "build": {
+    "productName": "VideoWall",
+    "appId": "videowall",
+    "win": {
+        "target": ["portable"],
+        "icon": "ico.ico"
+    },
+    "portable": {
+        "artifactName": "videowall_portable.exe"
+    }
+  },
+  "author": "Pedro José Navarro",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "electron": "^16.0.7",
+    "electron-builder": "^22.14.5",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "standard": "^16.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "pino": "^7.6.4"
+  }
+}
